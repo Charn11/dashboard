@@ -11,10 +11,16 @@ body{
     display: grid;
     background-color: #3b82f6;
     grid-template-rows: 70px 200px 140px;
+    grid-template-columns: minmax(185px, 1fr);
     gap: 20px;
     box-shadow: 10px 0px 10px black;
 }
+.sticky{
+    position: sticky;
+    top: 0;
+}
 .logo{
+    margin-top: 10px;
     display: flex;
     align-items: center;
     color: white;
@@ -38,7 +44,10 @@ body{
     grid-template-columns: 0fr 0fr;
     gap: 10px;
     justify-content: center;
-
+    margin-top: 50px;
+}
+#dash{
+    margin: 0;
 }
 .settings{
     color: white;
@@ -47,6 +56,7 @@ body{
     font-size: 18px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
 }
 .settings-cont{
     display: grid;
@@ -96,7 +106,77 @@ body{
     display: flex;
     flex: 1;
     justify-content: space-around;
-    flex-wrap: wrap;
+}
+.header-two{
+    justify-content: flex-start;
+    align-items: center;
+}
+#profile-main{
+    margin: 0px 20px 0 40px;
+}
+.greet{
+    display: block;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#hi{
+    font-weight: bold;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.buttons{
+    display: flex;
+    width: 60%;
+    height: 100%;
+    justify-content: flex-end;
+    margin-right: 70px;
+    gap: 25px;
+    align-items: center
+}
+button{
+    height: 30px;
+    width: 100px;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 50px;
+}
+#user{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 13px;
+}
+.header-one{
+    justify-content: flex-start;
+    align-items: center;
+}
+#glass{
+    margin: 0px 20px 0px 40px;
+}
+#input{
+    width: 550px;
+    height: 50%;
+    margin: 0 0 0 0;
+    border-radius: 50px;
+    background-color: lightgray;
+    border-style: none;
+}
+#bell{
+    margin: 0px 0px 0px 120px;
+}
+#profile{
+    margin: 0px 20px 0px 40px;
+}
+#name{
+    justify-content: center;
+    margin: 0px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .card-content{
     display: grid;
@@ -104,17 +184,37 @@ body{
 }
 .card-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 20px;
     margin: 20px;
     box-sizing: border-box;
 }
+.card-heading{
+    margin: 20px 0 0 20px;
+    
+}
+#prj-head{
+    margin: 0;
+}
 .card{
     background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card>p{
+    margin: 0;
+    font-weight: 100;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.card>h4{
+    margin: 10px 0 5px 0;
+    font-weight: bold;
 }
 .side-content{
     display: grid;
     grid-template-rows: 1fr 1fr;
+    margin-right: 20px;
 }
 li{
     list-style: none;
@@ -143,4 +243,36 @@ img{
 }
 .trending{
     display: flex;
+    justify-content: space-between;
+}
+.trend-div, .trend-div>p{
+    display: block;
+    margin: 0;
+}
+.trending-cont{
+    background-color: white;
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 20px;
+}
+.announ-col{
+    background-color: white;
+    padding: 35px 30px 35px 30px;
+    border-radius: 10px;
+    
+}
+.announce{
+    box-shadow: 0px 1px rgba(0, 0,0, 0.2);
+}
+.announce>p:last-of-type{
+    padding-bottom: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.announce>p:first-of-type{
+    margin: 0;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
