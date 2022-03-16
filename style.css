@@ -201,6 +201,13 @@ button{
     padding: 20px;
     border-radius: 10px;
 }
+.card-icon{
+    position: relative;
+    top: 20px;
+    left: 200px;
+    display: flex;
+    gap: 20px;
+}
 .card>p{
     margin: 0;
     font-weight: 100;
@@ -228,22 +235,26 @@ img{
 #prof1{
     border: 1px solid black;
     background-color: black;
+    align-self: center;
 }
 #prof2{
     border: 1px solid lightcoral;
     background-color: lightcoral;
+    align-self: center;
 }
 #prof3{
     border: 1px solid yellow;
     background-color: yellow;
+    align-self: center;
 }
 #prof4{
     border: 1px solid lightsalmon;
     background-color: lightsalmon;
+    align-self: center;
 }
 .trending{
     display: flex;
-    justify-content: space-between;
+    gap: 5px;
 }
 .trend-div, .trend-div>p{
     display: block;
@@ -253,6 +264,15 @@ img{
     background-color: white;
     padding: 10px 30px 10px 30px;
     margin-bottom: 20px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+}
+.trend-div{
+    margin: 10px;
+}
+.trend-head{
+    font-family: Arial, Helvetica, sans-serif;
 }
 .announ-col{
     background-color: white;
